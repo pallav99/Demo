@@ -37,9 +37,9 @@ public class DriverSetup {
 	public void driverSetup() {
 		// *****Accept the input from user for which browser to launch*****//
 		System.out.println("Select the browser number:  1.Google Chrome  2.Microsoft Edge");
-		Scanner sc = new Scanner(System.in);
+		
 
-		int choice = sc.nextInt();
+		int choice = 1;
 		if (choice == 1) {
 			System.out.println("Google Chrome");
 			driver = DriverSetup.getChromeBrowser();
