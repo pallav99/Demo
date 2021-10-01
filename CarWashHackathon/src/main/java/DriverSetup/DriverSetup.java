@@ -75,7 +75,7 @@ public class DriverSetup {
 // ********Code To invoke Google Chrome ********//
 	public static WebDriver getChromeBrowser() {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\1) final\\IdentifyCarWash\\IdentifyCarWashLast\\IdentifyCarWashLast\\IdentifyCarWash\\drivers\\chromedriver.exe");
+				System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		options.addArguments("--disable-blink-features=AutomationControlled");
